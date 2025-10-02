@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatório de Vendas - Varejo Rápido</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Varejo Rápido</h1>
+  </header>
+
+  <main>
+    <section class="resumo">
+      <div class="card">
+        <p>Total de vendas</p>
+        <h2>R$3.322,15</h2>
+      </div>
+      <div class="card">
+        <p>Cliente Top</p>
+        <h2>Ana Silva</h2>
+      </div>
+      <div class="card">
+        <p>Produto + Vendido</p>
+        <h2>Teclado Mecânico</h2>
+      </div>
+    </section>
+
+    <section class="busca">
+        <img src="img/search_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      <input type="text" placeholder=" Buscar: Cliente ou Produto">
+    </section>
+
+    <section class="tabela">
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Cliente</th>
+            <th>Produto</th>
+            <th>Qtd</th>
+            <th>Valor Unit.</th>
+            <th>Valor Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>29/09/2025</td>
+            <td>Ana Silva</td>
+            <td>Teclado Mecânico Gamer</td>
+            <td>2</td>
+            <td>R$350,75</td>
+            <td>R$701,50</td>
+          </tr>
+          <tr>
+            <td>29/09/2025</td>
+            <td>Carlos Pereira</td>
+            <td>Mouse Sem Fio Ergonômico</td>
+            <td>1</td>
+            <td>R$120,00</td>
+            <td>R$120,00</td>
+          </tr>
+          <tr>
+            <td>29/09/2025</td>
+            <td>Ana Silva</td>
+            <td>Monitor Ultrawide 34"</td>
+            <td>1</td>
+            <td>R$1899,90</td>
+            <td>R$1899,90</td>
+          </tr>
+          <tr>
+            <td>29/09/2025</td>
+            <td>Mariana Costa</td>
+            <td>Teclado Mecânico Gamer</td>
+            <td>1</td>
+            <td>R$350,75</td>
+            <td>R$350,75</td>
+          </tr>
+          <tr>
+            <td>29/09/2025</td>
+            <td>Carlos Pereira</td>
+            <td>Webcam Full HD com Microfone</td>
+            <td>1</td>
+            <td>R$250,00</td>
+            <td>R$250,00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="grafico">
+      <h2>Gráfico de vendas dos produtos</h2>
+      <canvas id="chartProdutos"></canvas>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
