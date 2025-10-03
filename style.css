@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Black Mango';
+  src: url('fonts/black-mango-black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: Arial, sans-serif;
   background: #D5F2D0;
@@ -9,9 +16,22 @@ body {
 header {
   background: #1A261A;
   color: #fff;
-  text-align: center;
-  padding: 20px;
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  gap: 8px;
+  font-family: 'Black Mango', sans-serif;
+}
+
+header img {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: auto;
+  transform: rotate(-20deg);
 }
 
 main {
